@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Notice Facture</title>
+</head>
+<body>
+
+    
+    <div class="container">
+        <h1>FACTURE</h1>
+
+    <form action="#" method="POST">
+        <div class="rectangle1">
+        <div>
+            
+            <input type="text" id="nom" class="none" name="nom" placeholder="Nom de l'entreprise">
+        </div>
+        <div>
+            
+            <input type="text" id="adresse" class="none" name="adresse" placeholder="Adresse de l'entreprise">
+        </div>
+        <div>
+            
+            <input type="text" id="tel" maxlength="10" class="none" name="tel" placeholder="Numéros de téléphone de l'entreprise">
+        </div>
+        <div>
+            
+            <input type="email" id="email" class="none" name="email" placeholder="Adresse de messagerie">
+        </div>
+    </div>
+    <div class="rectangle2">
+        <div>
+            <label for="Facture">N° DE FACTURE :</label>
+            <input type="number" id="Facture" name="Facture" placeholder="N°">
+        </div>
+
+        <div>
+            <label for="date">DATE :</label>
+            <input type="date" id="date" name="date" >
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+    <h3>À :</h3>
+    <div class="rectangle3">
+        
+       
+   
+      <select name="message" id="message" >
+        <option value="1"></option>
+        <option value="2"></option>
+        <option value="3"></option>
+        <option value="4"></option>
+        <option value="5"></option>
+    </select>
+
+        
+
+        
+
+        
+
+        <div id="societe">
+            
+            <input type="text" class="none" id="sec" placeholder="Nom de la société">
+            
+        </div>
+
+        <div   id="nom1">
+            
+            <input type="text" class="none" placeholder="Nom">
+            
+        </div>
+
+        <div id="rue">
+            
+            <input type="text" class="none"   placeholder="Rue">
+            
+        </div>
+
+        <div id="code">
+            
+            <input type="text" class="none"   placeholder="Code Postal/Ville">
+            
+        </div>
+
+        <div id="telephone">
+            
+            <input type="text" class="none"   placeholder="Numéros de téléphone">
+            
+        </div>
+    </div>
+</div>
+
+
+
+<div class="col">
+    <h3>EXPÉDIER À :</h3>
+    
+    <div class="rectangle3">
+        
+        
+        <select name="message2" id="message2" >
+            <option value="6"></option>
+            <option value="7"></option>
+            <option value="8"></option>
+            <option value="9"></option>
+            <option value="10"></option>
+        </select>
+
+        <div id="societe2">
+            
+            <input type="text"  class="none"    placeholder="Nom de la société">
+            
+        </div>
+
+        <div id="nom2">
+            
+            <input type="text" class="none"   placeholder="Nom">
+            
+        </div>
+
+        <div id="rue2">
+            
+            <input type="text" class="none"   placeholder="Rue">
+            
+        </div>
+
+        <div id="code2">
+            
+            <input type="text" class="none"   placeholder="Code Postal/Ville">
+            
+        </div>
+
+        <div id="telephone2">
+            
+            <input type="text" class="none"   placeholder="Numéros de téléphone">
+            
+        </div>
+    </div>
+</div>
+</div>
+
+
+<h3 class="text-center">Détails des produits facturés</h3>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Code produit</th>
+        <th scope="col">Libellé Produit</th>
+        <th scope="col">Prix - Unitaire en euros</th>
+        <th scope="col">Quantité commandée</th>
+        <th scope="col">Montant en euros</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">
+            <select name="prix2" id="allproduits" class="produits" >
+            <option value="0"></option>
+            <option  value="54"></option>
+            <option  value="55"></option>
+            <option  value="26"></option>
+            <option  value='60'></option>
+        </select>
+              
+            </th>
+        <td id="nomProduit"></td>
+        <td id="prix"></td>
+        <td>
+            <input type="number" id="quantite" min="0" max="100"  onclick="calcul(up3(),up2(),up(),up4())"  name="quantite">
+        </td>
+        <td id="montant"></td>
+      </tr>
+      <tr>
+        <th scope="row">
+            <select name="prix2" id="allproduits2" class="produits2" >
+                <option value="0"></option>
+                <option  value="54"></option>
+                <option  value="55"></option>
+                <option  value="26"></option>
+                <option  value='60'></option>
+            </select>
+            </th>
+        <td id="nomProduit2"></td>
+        <td id="prix2"></td>
+        <td>
+            <input type="number" id="quantite2" min="0" max="100" onclick="calcul(up3(),up2(),up(),up4())" name="quantite2">
+        </td>
+        <td id="montant2" ></td>
+      </tr>
+      <tr>
+        <th scope="row">
+            <select name="prix2" id="allproduits3" class="produits3" >
+                <option value="0"></option>
+                <option  value="54"></option>
+                <option  value="55"></option>
+                <option  value="26"></option>
+                <option  value='60'></option>
+            </select>
+            </th>
+        <td id="nomProduit3"></td>
+        <td id="prix3"></td>
+        <td>
+            <input type="number" id="quantite3" min="0" max="100" onclick="calcul(up3(),up2(),up(),up4())" name="quantite3">
+        </td>
+        <td id="montant3"></td>
+      </tr>
+      <tr>
+        <th scope="row">
+            <select name="prix2" id="allproduits4" class="produits4" >
+                <option value="0"></option>
+                <option  value="54"></option>
+                <option  value="55"></option>
+                <option  value="26"></option>
+                <option  value='60'></option>
+            </select>
+            </th>
+        <td id="nomProduit4"></td>
+        <td id="prix4"></td>
+        <td>
+            <input type="number" id="quantite4" min="0" max="100"   onclick="calcul(up3(),up2(),up(),up4())"  name="quantite4">
+        </td>
+        <td id="montant4"></td>
+      </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="bold">SOUS-TOTAL :</td>
+            <td class="bold" id="total"> </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="bold">T.V.A 20,00% :</td>
+            <td class="bold" id="tva"> </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="bold">PORT & MANUTENTION :</td>
+            <td class="bold" id="port" > </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="bold">TOTAL DU (TOTAL TTC) :</td>
+            <td class="bold" id="ttc"><span id="moins"></span> </td>
+        </tr>
+    </tfoot>
+    
+  </table>
+
+  
+
+    
+    </form>
+
+    <h5 id="remise" class="text-center p-5"></h5>
+    <footer>
+        <p>Veuille rédiger tous les chèques à l'ordre de <span id="output"></span> </p>
+        <p>Pour toute question concernant cette facture , veuillez contacter : DUPONT au <span id="put"></span>    ou à l'adresse <span id="mail"></span></p>
+        <p class="text-center">Nous vous remercions de votre confiance</p>
+    </footer>
+<form>
+    <input id="impression" name="impression" type="button" onclick="imprimer_page()" value="Imprimer cette page" />
+</form>
+    
+
+   
+</div>
+    
+
+
+
+    <script type="text/javascript" src="javascript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

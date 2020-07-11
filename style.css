@@ -1,0 +1,86 @@
+body{
+    background-color: lightgray;
+}
+
+h1{
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+form{
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+.rectangle1{
+    height: 87px;
+    width: 163px;
+    
+}
+
+.rectangle2{
+    align-items: flex-end;
+    /* margin-left: 20px; */
+    margin-top: 80px;
+    /* display: inline-block; */
+    /* display: grid; */
+    display: flex;
+    /* justify-content: flex-end; */
+    flex-direction: column;
+}
+
+h3{
+    margin-top: 50px;
+}
+
+.rectangle3{
+    width: 191px;
+}
+
+
+.none{
+    width: 100%;
+    
+    margin-top: 5px;
+    
+}
+
+input[type=number]{
+    width: 165px;
+    
+}
+
+#output, #put, #mail{
+    font-weight: bold;
+}
+
+#message, #message2{
+    width: 100%;
+   
+}
+
+select{
+    width: 270px;
+}
+
+option:hover{
+  cursor: pointer;
+}
+
+.modif{
+    width: 100%;
+    border: 1px solid black;
+}
+
+.modif2{
+    width: 280px;
+    border: 1px solid black;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+
